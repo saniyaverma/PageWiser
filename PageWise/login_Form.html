@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- jQuery -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+     <title>User login and registration</title>
+     <link rel="icon" href="img/logo.png" type="image/x-icon">
+     <style type="text/css">
+          .row {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+          .col-md-3 {
+               display: flex;
+               align-items: center;
+          }
+          .txt1 {
+               color: aliceblue;
+               margin-bottom: 0;
+               padding: 5px;
+               font-size: larger;
+               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               align-items: center;
+               text-shadow: cadetblue;
+          }
+          .button {
+               margin-right: 5px;
+          }
+          .col-md-2 {
+               height: 60px;
+          }
+          #profile {
+               margin-left: 60px;
+               margin-top: 10px;
+          }
+          #home {
+               margin-left: 60px;
+               margin-top: 10px;
+          }
+          #menu {
+               margin-right: 60px;
+          }
+          .form-control {
+               border: 0.5px solid #4d4d4da6;
+               padding-bottom: 10px;
+               padding-top: 10px;
+               margin-top: 10px;
+               border-radius: 10px;
+               box-shadow: 3px 6px 10px #4c4a4a9e;
+               .row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+               }
+          }
+          body {
+               /* background-image: url(https://th.bing.com/th/id/OIP.SXBU_28rYqfbZXuYl8f-dgHaEu?w=275&h=180&c=7&r=0&o=5&pid=1.7);
+               background-repeat: no-repeat;
+               background-size: cover; */
+               background-image: linear-gradient(to right, blueviolet, aqua);
+          }
+          .container {
+               margin-bottom: 50px;
+          }
+          #random_img {
+               background-size: cover;
+               max-width: 600px;
+               position: relative;
+          }
+     </style>
+</head>
+<body>
+     <!-- NAV BAR -->
+     <nav>
+          <div class="row" style="background-color: steelblue;">
+               <div class="col-md-2">
+                    <div class="d-flex align-items-center">
+                         <a href="user_Info.html"><img class="button" id="profile" src="img/User-Profile-PNG-Image.png"
+                                   height="40px"></a>
+                         <a href="index.html"><img class="button" id="home" src="img/home (1).png" height="40px"
+                                   style="padding:1px;"></a>
+                    </div>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="catalogue.html" id="catalogue" style="color:white;">Catalogue</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="blogPage.html" id="blog" style="color:white;">Blog</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="reviews.html" id="about" style="color:white;">Reviews</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="about.html" id="about" style="color:white;">About Us</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="login_Form.html" id="login" style="color:white;">Login</a>
+               </div>
+               <div class="col-md-1 text-right">
+                    <img class="button" id="menu" src="img/menu-bar.png" height="40px" style="padding:1px;"
+                         class="btn btn-info" data-toggle="modal" data-target="#myModal">
+               </div>
+          </div>
+     </nav><br><br>
+     <!-- FORM -->
+     <div class="container">
+          <form>
+               <div class="row">
+                    <div class="col-md-5"
+                         style="justify-content: left; display:inline-block; background-image:linear-gradient(to left,rgb(52, 133, 233),rgb(132, 44, 213)); border-radius: 50%;">
+                         <img class="random_img" src="img/Bgt1.png" height="500px">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6"
+                         style="border-radius:10px; border:1px solid #4d4d4da6; padding-bottom: 30px; padding-top: 30px; padding-left: 50px; padding-right: 50px; background-color:powderblue; width:600px; position:relative;">
+                         <div class="row">
+                              <div class="col-md-12">
+                                   <label>Name</label>
+                                   <input type="text" name="name" class="form-control"
+                                        placeholder="Enter your name here" required>
+                              </div>
+                              <div class="col-md-12">
+                                   <label style="margin-top: 20px;">Email</label>
+                                   <input type="email" name="email" class="form-control"
+                                        placeholder="Enter your email address here" required>
+                              </div>
+                              <div class="col-md-12">
+                                   <label style="margin-top: 20px;">Mobile number</label>
+                                   <input type="number" name="mobile" class="form-control"
+                                        placeholder="Enter your mobile number here">
+                              </div>
+                              <div class="col-md-12">
+                                   <label style="margin-top: 20px;">Gender</label>
+                                   <select class="form-control" name="Gender" style="padding: 7px;">
+                                        <option value="selected disabled">Please select</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                   </select>
+                              </div>
+                              <div class="col-md-12">
+                                   <label style="margin-top: 20px;" required>Age</label><br>
+                                   <input type="radio" name="age group" value="<18">
+                                   <18 <input type="radio" name="age group" value="18-25"> 18-25
+                                        <input type="radio" name="age group" value="25-40"> 25-40
+                                        <input type="radio" name="age group" value=">40"> >40
+                              </div><br>
+                              <div class="col-md-12">
+                                   <label style="margin-top: 20px;" required>Preferred languages</label><br>
+                                   <input type="checkbox" name="language[]" value="Hindi"> Hindi
+                                   <input type="checkbox" name="language[]" value="English"> English
+                                   <input type="checkbox" name="language[]" value="Sanskrit"> Sanskrit
+                                   <input type="checkbox" name="language[]" value="other"> Other
+                              </div>
+                              <div class="col-md-12">
+                                   <label style="margin-top: 20px;" required>Preferred Genres</label><br>
+                                   <input type="checkbox" name="genres[]" value="Fiction"> Fiction
+                                   <input type="checkbox" name="genres[]" value="Non-fiction"> Non-fiction
+                                   <input type="checkbox" name="genres[]" value="Mystery"> Mystery
+                                   <input type="checkbox" name="genres[]" value="Romance"> Romance
+                                   <input type="checkbox" name="genres[]" value="Mythology"> Mythology<br>
+                                   <input type="checkbox" name="genres[]" value="Self-help"> Self-help
+                                   <input type="checkbox" name="genres[]" value="Poetry"> Poetry
+                                   <input type="checkbox" name="genres[]" value="Comics"> Comics
+                                   <input type="checkbox" name="genres[]" value="Classics"> Classics
+                                   <input type="checkbox" name="genres[]" value="Horror"> Horror
+                                   <input type="checkbox" name="genres[]" value="other"> Biography
+                              </div>
+                              <div class="col-md-12">
+                                   <label style="margin-top: 20px;">Additional comments</label>
+                                   <textarea class="form-control" name="address" rows="2"
+                                        placeholder="Additional comments"></textarea>
+                              </div>
+                              <div class="col-md-12" style="margin-top: 10px;">
+                                   <button type="submit" class="btn btn-info form-control"
+                                        name="submitButton">Register</button>
+                                   <!-- btn-primary,btn-info,btn-warning,btn-danger -->
+                              </div>
+                         </div>
+          </form>
+     </div>
+     <!-- MODAL -->
+     <div class="modal" id="myModal" style="width:180pt; margin-left:1450px;margin-top: 25px;">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-body">
+                         <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                         <a href=index.html>Home</a><br>
+                         <hr>
+                         <a href=login_Form.html>Login</a><br>
+                         <hr>
+                         <a href=catalogue.html>Catalogue<br>
+                              <hr>
+                              <a href=blogPage.html>Blog</a><br>
+                              <hr>
+                              <a href=reviews.html>Reviews</a><br>
+                              <hr>
+                              <a href=about.html>About Us</a><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- RANDOM IMAGE -->
+     <script>
+          const imageUrls = [
+               'img/Bgt1.png',
+               'img/Bgt2.png',
+               'img/Bgt3.png',
+               'img/Bgt4.png',
+               'img/Bgt5.png',
+               'img/Bgt6.png',
+               'img/Bgt7.png',
+               'img/Bgt8.png',
+               'img/Bgt9.png'
+          ];
+          function getRandomNumber(min, max) {
+               return Math.floor(Math.random() * (max - min + 1)) + min;
+          }
+          const randomIndex = getRandomNumber(0, imageUrls.length - 1);
+          const imgElement = document.querySelector('.random_img');
+          imgElement.src = imageUrls[randomIndex];
+     </script>
+</body>
+</html>

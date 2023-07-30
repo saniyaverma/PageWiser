@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <style>
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .col-md-3 {
+      display: flex;
+      align-items: center;
+    }
+    .txt1 {
+      color: aliceblue;
+      margin-bottom: 0;
+      padding: 5px;
+      font-size: larger;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      align-items: center;
+      text-shadow: cadetblue;
+    }
+    .button {
+      margin-right: 5px;
+    }
+    .col-md-2 {
+      height: 60px;
+    }
+    #profile {
+      margin-left: 60px;
+      margin-top: 10px;
+    }
+    #home {
+      margin-left: 60px;
+      margin-top: 10px;
+    }
+    #menu {
+      margin-right: 60px;
+    }
+  </style>
+</head>
+<body style="background-image:linear-gradient(to left, aqua, blueviolet);">
+  <nav>
+    <div class="row" style="background-color: steelblue;">
+      <div class="col-md-2">
+        <div class="d-flex align-items-center">
+          <a href="user_Info.html"><img class="button" id="profile" src="img/User-Profile-PNG-Image.png"
+              height="40px"></a>
+          <a href="index.html"><img class="button" id="home" src="img/home (1).png" height="40px"
+              style="padding:1px;"></a>
+        </div>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="catalogue.html" id="catalogue" style="color:white;">Catalogue</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="blogPage.html" id="blog" style="color:white;">Blog</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="reviews.html" id="about" style="color:white;">Reviews</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="about.html" id="about" style="color:white;">About Us</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="login_Form.html" id="login" style="color:white;">Login</a>
+      </div>
+      <div class="col-md-1 text-right">
+        <img class="button" id="menu" src="img/menu-bar.png" height="40px" style="padding:1px;" class="btn btn-info"
+          data-toggle="modal" data-target="#myModal">
+      </div>
+    </div>
+  </nav>
+  <!-- The modal -->
+  <div class="modal" id="myModal" style="width:180pt; margin-left:1450px;margin-top: 25px;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+          <a href=index.html>Home</a><br>
+          <hr>
+          <a href=login_Form.html>Login</a><br>
+          <hr>
+          <a href=catalogue.html>Catalogue<br>
+            <hr>
+            <a href=blogPage.html>Blog</a><br>
+            <hr>
+            <a href=reviews.html>Reviews</a><br>
+            <hr>
+            <a href=about.html>About Us</a><br>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="background-color: white; height:5px; opacity: 50%;">
+      <div class="row">
+        <div class="col-md-12" style="background-color: white; height:80px; opacity: 75%;">
+          <p
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 40pt;font-weight: bold; color: rgba(48, 15, 169, 0.826); text-align: center; text-shadow: 3px 3px 3px cyan; ">
+            About Us
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="background-color: white; height:5px; opacity: 50%;margin-top:75px;"></div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="background-color: white; height:2px; opacity: 50%;margin-top:5px;"></div>
+    <div class="col-md-4"></div>
+  </div><br><br>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" style=" justify-content: center; text-align: center; font-size: 16pt;">
+      <p style="color:white; font-family: Arial, Helvetica, sans-serif; font-weight: 200; font-size: 16pt;">
+        At PageWiser, we believe in the magic of words and the power of storytelling. Our passion for books and
+        literature has brought us together to create this platform where book lovers from all corners of the world can
+        come together and embark on an extraordinary journey through the realms of imagination.
+      </p><br>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="img/logo.png">
+    </div>
+    <div class="col-md-6" style="text-align: center; justify-content: center;"><br><br>
+      <h1 style="font-weight:bolder; margin-left: 50px; color: rgb(67, 67, 167);">Our Mission</h1>
+      <hr>
+      <p style="color:white; font-family: Arial, Helvetica, sans-serif; font-weight: 200; font-size: 16pt;">
+        To inspire, enlighten, and entertain readers of all ages by curating a diverse collection of books from various
+        genres and eras. We strive to foster a vibrant community where book enthusiasts can connect, share their
+        thoughts, and discover new literary gems.
+      </p><br>
+      <h1 style="font-weight:bolder; margin-left: 50px; color: rgb(67, 67, 167);">Our Vision</h1>
+      <hr>
+      <p style="color:white; font-family: Arial, Helvetica, sans-serif; font-weight: 200; font-size: 16pt;">
+        To become the go-to destination for bibliophiles and book whisperers, offering a sanctuary of literary treasures
+        that ignite the imagination and spark conversations. We envision a world where the love for books unites people
+        from different cultures and backgrounds, transcending boundaries and fostering a sense of belonging.
+      </p>
+    </div>
+    <div class="col-md-3"></div>
+  </div><br><br><br><br>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="background-color: white; height:5px; opacity: 50%;">
+      <div class="row">
+        <div class="col-md-12" style="background-color: white; height:80px; opacity: 75%;">
+          <p
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 40pt;font-weight: bold; color: rgba(48, 15, 169, 0.826); text-align: center; text-shadow: 3px 3px 3px cyan;">
+            Contact Us
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="background-color: white; height:5px; opacity: 50%;margin-top:75px;"></div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="background-color: white; height:2px; opacity: 50%;margin-top:5px;"></div>
+    <div class="col-md-4"></div>
+  </div><br><br>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" style="font-size: 16pt;">
+      <p
+        style="color:white; font-family: Arial, Helvetica, sans-serif; font-weight: 200; font-size: 16pt; text-align: center;">
+        Have a question, suggestion, or just want to share your love for books? We'd love to hear from you! Feel free to
+        reach out to us using the contact information below:<br><br>
+      </p>
+      <p>
+        <img src="img/email.png" height="40px" style="margin-right:20px;margin-left:100px;"> pagewiser1@gmail.com<br>
+        <img src="img/phone.png" height="40px" style="margin-right:20px;margin-left:100px;"> 1234567890<br>
+        <img src="img/youtube.png" height="40px"
+          style="margin-right:20px;margin-left:100px; color:black!important;">https://youtube.com/@PageWiser1</a>
+        <br>
+        <img src="img/instagram.png" height="40px"
+          style="margin-right:20px;margin-left:100px;color:black!important;">https://instagram.com
+      </p><br><br><br><br>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <!-- FOOTER -->
+  <div class="row" style="background-color: steelblue; height: 80px;">
+    <div class="col-md-2">
+      <p
+        style="color:white; font-size:15pt; text-decoration:solid; font-family:cursive; padding-top:15px; text-align: center;">
+        <b>Follow us on socials:</b>
+      </p>
+    </div>
+    <div class="col-md-1">
+      <a href="mailto:pagewiser1@gmail.com" target="_blank"><img src="img/gmail.png"
+          style="height:35px; width:30px; padding-top:2px;padding-bottom:2px;" class="button" align="center"></a>
+    </div>
+    <div class="col-md-1">
+      <a href="https://youtube.com/@PageWiser1" target="_blank"><img src="img/YouTubelogo.png"
+          style="height:40px; width:35px; padding-top:2px;padding-bottom:2px;" class="button" align="center"></a>
+    </div>
+    <div class="col-md-1">
+      <a href="https://instagram.com" target="_blank"><img src="img/Instagramlogo.png"
+          style="height:40px; width:40px; padding-top:2px;padding-bottom:2px;" class="button" align="center"></a>
+    </div>
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+      <p
+        style="color:white; font-size:15pt; text-decoration:solid; font-family:cursive; padding-top:15px; text-align: center;">
+        <b>Click to show us your love!</b>
+      </p>
+    </div>
+    <div class="col-md-1">
+      <img id="myImage" class="button" onclick="changeImage()" src="img/LikeOff.png"
+        style="height:40px; padding-top:2px; padding-bottom:2px;">
+    </div>
+  </div>
+  <script type="text/javascript">
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("LikeOff")) {
+        image.src = "img/LikeOn.png";
+        image.style = "height:40px; padding: 5px;";
+      }
+      else {
+        image.src = "img/LikeOff.png";
+        image.style = "height:40px; padding: 5px;";
+      }
+    }
+  </script>
+</body>
+</html>

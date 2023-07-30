@@ -1,0 +1,297 @@
+<!--Homepage-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PageWiser</title>
+
+     <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+
+     <style>
+          .row {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+
+          .col-md-3 {
+               display: flex;
+               align-items: center;
+          }
+
+          .txt1 {
+               color: aliceblue;
+               margin-bottom: 0;
+               padding: 5px;
+               font-size: larger;
+               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               align-items: center;
+               text-shadow: cadetblue;
+          }
+
+          .button {
+               margin-right: 5px;
+          }
+
+          .col-md-2 {
+               height: 60px;
+          }
+
+          #profile {
+               margin-left: 60px;
+               margin-top: 10px;
+          }
+
+          #home {
+               margin-left: 60px;
+               margin-top: 10px;
+          }
+
+          #menu {
+               margin-right: 60px;
+          }
+
+          .lines {
+               height: 600px;
+               width: 5px;
+               color: black;
+          }
+     </style>
+
+</head>
+
+<body style="background-color:whitesmoke;">
+
+     <!-- NAV BAR -->
+     <nav>
+          <div class="row" style="background-color: steelblue;">
+               <div class="col-md-2">
+                    <div class="d-flex align-items-center">
+                         <a href="user_Info.html"><img class="button" id="profile" src="img/User-Profile-PNG-Image.png"
+                                   height="40px"></a>
+                         <a href="index.html"><img class="button" id="home" src="img/home (1).png" height="40px"
+                                   style="padding:1px;"></a>
+                    </div>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="catalogue.html" id="catalogue" style="color:white;">Catalogue</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="blogPage.html" id="blog" style="color:white;">Blog</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="reviews.html" id="reviews" style="color:white;">Reviews</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="about.html" id="about" style="color:white;">About Us</a>
+               </div>
+               <div class="col-md-1 txt1 button">
+                    <a href="login_Form.html" id="login" style="color:white;">Login</a>
+               </div>
+               <!--If we want login form to open on new page target="_blank" is used-->
+
+               <div class="col-md-1 text-right">
+                    <img class="button" id="menu" src="img/menu-bar.png" height="40px" style="padding:1px;"
+                         class="btn btn-info" data-toggle="modal" data-target="#myModal">
+               </div>
+          </div>
+     </nav>
+
+     <!-- HERO BANNER -->
+     <div class="row"
+          style="height: 500px; color: whitesmoke; background-image: linear-gradient(to left,aqua,blueviolet)!important;">
+          <div class="col-md-1" style="margin-top: 0px;">
+               <img id="logo" src="img/logo.png" height="600px">
+          </div>
+          <div class="tagline col-md-8">
+               <p
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 50pt;font-weight: bold; color: rgba(48, 15, 169, 0.826);">
+                    Welcome to PageWiser!</p><br>
+               <p
+                    style="font-size: 30pt; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-top: 0%; color: #E0FFFF">
+                    Be a page wiser everyday.</p>
+          </div>
+     </div>
+
+     <br><br>
+     <div class="row">
+          <!-- CAROUSEL -->
+          <div class="col-md-5" style="margin-left:50px;">
+               <div class="slideshow-container">
+                    <div class="mySlides fade">
+                         <img src="img/1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                         <img src="img/2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                         <img src="img/3.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                         <img src="img/4.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                         <img src="img/5.jpg" style="width:100%">
+                    </div>
+               </div>
+               <br>
+               <div style="text-align: center;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+               </div>
+          </div>
+          <!-- BOOK OF THE MONTH -->
+          <div class="col-md-1"
+               style="background-color:rgb(255, 207, 14); border-radius: 8%; height:600px;margin-bottom:45px;">
+               <div style="width: auto; height:10px; background-color: rgb(0, 119, 255); margin-top: 20px;"></div>
+               <p
+                    style="text-align: center; background-color:azure; margin-top:20px; height: 500px;color:darkcyan; font-weight: bold;padding-top: 70px;">
+                    BOOK<br>OF<br>THE<br>MONTH</p>
+               <div style="width: auto; height:10px; background-color: rgb(0, 119, 255);"></div>
+          </div>
+          <div class="col-md-1" style="margin-bottom:45px;">
+               <div class="row">
+                    <div class="col-md-1" style="background-color:crimson; height:600px; border-radius:10%;"></div>
+                    <div class="col-md-1" style="background-color:rgb(207, 228, 227); height:575px; margin-bottom:0px;">
+                    </div>
+                    <div class="col-md-1" style="background-color:rgb(207, 228, 227); height:575px; margin-bottom:0px;">
+                    </div>
+                    <div class="col-md-1" style="background-color:crimson; height:600px; border-radius:10%"></div>
+               </div>
+          </div>
+          <div class="col-md-4"
+               style="background-color:rgb(253, 238, 177); height:600px; margin-right:95px;margin-bottom:45px;">
+               <div class="row">
+                    <div class="col-md-12">
+                         <img src="img/BookOfMonth.webp"
+                              style="display:flex; margin-left: auto; margin-right:auto;margin-top:50px; width:50%; filter: drop-shadow(10px 10px 10px black);">
+                         <br>
+                    </div>
+                    <div class="col-md-12">
+                         <p
+                              style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(207, 141, 34); font-weight: bolder; font-size: x-large;">
+                              The Night Circus<br>By Erin Morgenstern</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <br>
+     <script>
+          let slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+               let i;
+               let slides = document.getElementsByClassName("mySlides");
+               let dots = document.getElementsByClassName("dot");
+               for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+               }
+               slideIndex++;
+               if (slideIndex > slides.length) {
+                    slideIndex = 1;
+               }
+               for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+               }
+               slides[slideIndex - 1].style.display = "block";
+               dots[slideIndex - 1].className += " active";
+               setTimeout(showSlides, 5000);
+          }
+     </script>
+
+     <!-- THE MODAL -->
+     <div class="modal" id="myModal" style="width:180pt; margin-left:1450px;margin-top: 25px;">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-body">
+                         <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                         <a href=index.html>Home</a><br>
+                         <hr>
+                         <a href=login_Form.html>Login</a><br>
+                         <hr>
+                         <a href=catalogue.html>Catalogue<br>
+                              <hr>
+                              <a href=blogPage.html>Blog</a><br>
+                              <hr>
+                              <a href=reviews.html>Reviews</a><br>
+                              <hr>
+                              <a href=about.html>About Us</a><br>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- FOOTER -->
+     <div class="row" style="background-color: steelblue; height: 80px;">
+          <div class="col-md-2">
+               <p
+                    style="color:white; font-size:15pt; text-decoration:solid; font-family:cursive; padding-top:15px; text-align: center;">
+                    <b>Follow us on socials:</b>
+               </p>
+               <!-- #6ff6f6 #d24cff #f81d1d-->
+          </div>
+          <div class="col-md-1">
+               <a href="mailto:pagewiser1@gmail.com" target="_blank"><img src="img/gmail.png"
+                         style="height:35px; width:30px; padding-top:2px;padding-bottom:2px;" class="button"
+                         align="center"></a>
+          </div>
+          <div class="col-md-1">
+               <a href="https://youtube.com/@PageWiser1" target="_blank"><img src="img/YouTubelogo.png"
+                         style="height:40px; width:35px; padding-top:2px;padding-bottom:2px;" class="button"
+                         align="center"></a>
+          </div>
+          <div class="col-md-1">
+               <a href="https://instagram.com" target="_blank"><img src="img/Instagramlogo.png"
+                         style="height:40px; width:40px; padding-top:2px;padding-bottom:2px;" class="button"
+                         align="center"></a>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-2">
+               <p
+                    style="color:white; font-size:15pt; text-decoration:solid; font-family:cursive; padding-top:15px; text-align: center;">
+                    <b>Click to show us your love!</b>
+               </p>
+          </div>
+          <div class="col-md-1">
+               <img id="myImage" class="button" onclick="changeImage()" src="img/LikeOff.png"
+                    style="height:40px; padding-top:2px; padding-bottom:2px;">
+          </div>
+     </div>
+     <script type="text/javascript">
+          function changeImage() {
+               var image = document.getElementById('myImage');
+               if (image.src.match("LikeOff")) {
+                    image.src = "img/LikeOn.png";
+                    image.style = "height:40px; padding: 5px;";
+               }
+               else {
+                    image.src = "img/LikeOff.png";
+                    image.style = "height:40px; padding: 5px;";
+               }
+          }
+     </script>
+</body>
+
+</html>

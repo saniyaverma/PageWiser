@@ -1,0 +1,313 @@
+<!-- Catalogue -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .col-md-3 {
+      display: flex;
+      align-items: center;
+    }
+
+    .txt1 {
+      color: aliceblue;
+      margin-bottom: 0;
+      padding: 5px;
+      font-size: larger;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      align-items: center;
+      text-shadow: cadetblue;
+    }
+
+    .button {
+      margin-right: 5px;
+    }
+
+    .col-md-2 {
+      height: 60px;
+    }
+
+    #profile {
+      margin-left: 60px;
+      margin-top: 10px;
+    }
+
+    #home {
+      margin-left: 60px;
+      margin-top: 10px;
+    }
+
+    #menu {
+      margin-right: 60px;
+    }
+  </style>
+</head>
+
+<body style="background-color: aliceblue;">
+
+  <!--NAV BAR-->
+  <nav>
+    <div class="row" style="background-color: steelblue;">
+      <div class="col-md-2">
+        <div class="d-flex align-items-center">
+          <a href="user_Info.html"><img class="button" id="profile" src="img/User-Profile-PNG-Image.png"
+              height="40px"></a>
+          <a href="index.html"><img class="button" id="home" src="img/home (1).png" height="40px"
+              style="padding:1px;"></a>
+        </div>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="catalogue.html" id="catalogue" style="color:white;">Catalogue</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="blogPage.html" id="blog" style="color:white;">Blog</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="reviews.html" id="about" style="color:white;">Reviews</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="about.html" id="about" style="color:white;">About Us</a>
+      </div>
+      <div class="col-md-1 txt1 button">
+        <a href="login_Form.html" id="login" style="color:white;">Login</a>
+      </div>
+      <!--If we want login form to open on new page target="_blank" is used-->
+
+      <div class="col-md-1 text-right">
+        <img class="button" id="menu" src="img/menu-bar.png" height="40px" style="padding:1px;" class="btn btn-info"
+          data-toggle="modal" data-target="#myModal">
+      </div>
+    </div>
+  </nav>
+  <!-- The modal -->
+  <div class="modal" id="myModal" style="width:180pt; margin-left:1450px;margin-top: 25px;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+          <a href=index.html>Home</a><br>
+          <hr>
+          <a href=login_Form.html>Login</a><br>
+          <hr>
+          <a href=catalogue.html>Catalogue<br>
+            <hr>
+            <a href=blogPage.html>Blog</a><br>
+            <hr>
+            <a href=reviews.html>Reviews</a><br>
+            <hr>
+            <a href=about.html>About Us</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12"
+      style="display:flex; justify-content: center; align-items: center; background-color:beige; height: 150px;">
+      <p
+        style="background-color:light; text-align: center; font-family:Arial, Helvetica, sans-serif; color:darkslategrey; text-shadow: 3px 3px 3px skyblue; word-spacing: 3px;letter-spacing: 1px; font-weight:bold;font-size: xxx-large;">
+        Book Catalogue</p>
+    </div>
+  </div>
+  </div>
+  <table class="table table-bordered table-striped" style="border: 5px solid #74aae3;">
+    <tr style="background-color: #6490c0; text-align: center; color:white;font-weight: bold;">
+      <td>S.No.</td>
+      <td>Name</td>
+      <td>Author</td>
+      <td>Genre</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>To Kill a Mockingbird</td>
+      <td>Harper Lee</td>
+      <td>Fiction</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>2</td>
+      <td>1984</td>
+      <td>George Orwell</td>
+      <td>Fiction</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Pride and Prejudice</td>
+      <td>Jane Austen</td>
+      <td>Fiction</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>4</td>
+      <td>The Great Gatsby</td>
+      <td>F. Scott Fitzgerald</td>
+      <td>Fiction</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Harry Potter</td>
+      <td>J.K. Rowling</td>
+      <td>Fiction</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>6</td>
+      <td>Gone Girl</td>
+      <td>Gillian Flynn</td>
+      <td>Mystery</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>The Girl with the Dragon Tattoo</td>
+      <td>Stieg Larsson</td>
+      <td>Mystery</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>8</td>
+      <td>The Da Vinci Code</td>
+      <td>Dan Brown</td>
+      <td>Mystery</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>And Then There Were None</td>
+      <td>Agatha Christie</td>
+      <td>Mystery</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>10</td>
+      <td>The Silent Patient</td>
+      <td>Alex Michaelides</td>
+      <td>Mystery</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>The Notebook</td>
+      <td>Nicholas Sparks</td>
+      <td>Romance</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>12</td>
+      <td>Outlander</td>
+      <td>Diana Gabaldon</td>
+      <td>Romance</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Me Before You</td>
+      <td>Jojo Moyes</td>
+      <td>Romance</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>14</td>
+      <td>The Hating Game</td>
+      <td>Sally Thorne</td>
+      <td>Romance</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Red, White & Royal Blue</td>
+      <td>Casey McQuiston</td>
+      <td>Romance</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>16</td>
+      <td>The Name of the Wind</td>
+      <td>Patrick Rothfuss</td>
+      <td>Fantasy</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Mistborn</td>
+      <td>Brandon Sanderson</td>
+      <td>Fantasy</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>18</td>
+      <td>A Song of Ice and Fire</td>
+      <td>George R.R. Martin</td>
+      <td>Fantasy</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>The Hobbit</td>
+      <td>J.R.R. Tolkien</td>
+      <td>Fantasy</td>
+    </tr>
+    <tr style="background-color: rgb(186, 222, 246);">
+      <td>20</td>
+      <td>The Priory of the Orange Tree</td>
+      <td>Samantha Shannon</td>
+      <td>Fantasy</td>
+    </tr>
+  </table><br>
+  <!-- FOOTER -->
+  <div class="row" style="background-color: steelblue; height: 60px;">
+    <div class="col-md-2">
+      <p
+        style="color:white; font-size:15pt; text-decoration:solid; font-family:cursive; padding-top:15px; text-align: center;">
+        <b>Follow us on socials:</b>
+      </p>
+      <!-- #6ff6f6 #d24cff #f81d1d-->
+    </div>
+    <div class="col-md-1">
+      <a href="mailto:pagewiser1@gmail.com" target="_blank"><img src="img/gmail.png"
+          style="height:35px; width:30px; padding-top:2px;padding-bottom:2px;" class="button" align="center"></a>
+    </div>
+    <div class="col-md-1">
+      <a href="https://youtube.com/@PageWiser1" target="_blank"><img src="img/YouTubelogo.png"
+          style="height:40px; width:35px; padding-top:2px;padding-bottom:2px;" class="button" align="center"></a>
+    </div>
+    <div class="col-md-1">
+      <a href="https://instagram.com" target="_blank"><img src="img/Instagramlogo.png"
+          style="height:40px; width:40px; padding-top:2px;padding-bottom:2px;" class="button" align="center"></a>
+    </div>
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+      <p
+        style="color:white; font-size:15pt; text-decoration:solid; font-family:cursive; padding-top:15px; text-align: center;">
+        <b>Click to show us your love!</b>
+      </p>
+    </div>
+    <div class="col-md-1">
+      <img id="myImage" class="button" onclick="changeImage()" src="img/LikeOff.png"
+        style="height:40px; padding-top:2px; padding-bottom:2px;">
+    </div>
+  </div>
+  <script type="text/javascript">
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("LikeOff")) {
+        image.src = "img/LikeOn.png";
+        image.style = "height:40px; padding: 5px;";
+      }
+      else {
+        image.src = "img/LikeOff.png";
+        image.style = "height:40px; padding: 5px;";
+      }
+    }
+  </script>
+</body>
+</html>
